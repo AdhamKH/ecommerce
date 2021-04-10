@@ -80,7 +80,7 @@
     </div>
   </section>
   <!-- logo -->
-  <section class="container" style="padding: 10px 0">
+  <section class="container" style="padding-top: 10px">
     <div class="row">
       <div class="col-md-6">
         <div class="row">
@@ -106,32 +106,33 @@
           <div class="col-md-3">
             <div class="dropdown" >
               
-              <button class="btn dropdown-toggle p-0 m-0" type="button"  id="dropdownMenuButton" data-toggle="dropdown"
+              <button class="btn dropdown-toggle  login-join-button-father" type="button"  id="dropdownMenuButton" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-user icon-color fa-border p-2 mx-2"> </i> My account
+                <i class="fas fa-user icon-color fa-border p-3 login-join-button-father-icon "> </i> My account
+                <div class="login-join-button">
+                  <a  style="color: gray; font-size: 12px" href="login.html">Login /</a>
+                  <a style="color: gray; font-size: 12px" href="join.html">Join</a>
+                </div>
+              </div>
               </button>
-              
-
+            
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="profile.html">profile</a>
                 <a class="dropdown-item" href="#">Another action</a>
                 <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </div>
-            <div class="pull-right" style="padding-left: 15px; margin-left: 15px;">
-            <a  style="color: gray; font-size: 12px" href="login.html">Login /</a>
-            <a style="color: gray; font-size: 12px" href="join.html">Join</a>
-          </div>
-              
+              </div>         
+            
             
           </div>
-
+ 
           <div class="col-md-3">
             <div class="dropdown">
-              <button class="btn dropdown-toggle p-0 m-0" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              <button class="btn dropdown-toggle  login-join-button-father" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-shopping-cart icon-color fa-border p-2 mx-2"></i> My
+                <i class="fas fa-shopping-cart icon-color fa-border p-3 "></i> My
                 cart
+                <div class="mycart">
+                  <span  style="color: gray; font-size: 12px ">350 L.E</span></div>
               </button>
 
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -140,8 +141,7 @@
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
             </div>
-            <div style="margin-left: 15px; padding-left: 15px;">
-            <span  style="color: gray; font-size: 12px">350 L.E</span></div>
+        
            
           </div>
         </div>
@@ -160,7 +160,7 @@
         <div class="collapse navbar-collapse" id="main_nav">
           <ul class="navbar-nav">
             <li class="nav-item dropdown has-megamenu">
-              <a class="nav-link bg-1" href="#" data-toggle="dropdown">
+              <a class="nav-link bg-1" href="categories.html" data-toggle="dropdown">
                 Categories<span class="px-5"> </span>
                 <i class="fas fa-list"></i>
               </a>
@@ -277,7 +277,7 @@
             <li class="nav-item active">
               <a class="nav-link" href="Index.html">Home </a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#"> Shop </a></li>
+            <li class="nav-item"><a class="nav-link" href="Shop.html"> Shop </a></li>
 
             <li class="nav-item dropdown has-megamenu">
               <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
@@ -590,9 +590,9 @@
             </div>
           </div>
 
-          <div class="carousel-item">
+          <!-- <div class="carousel-item">
             <img class="d-block w-100" src="images/mall/2.jpg" alt="Second slide" />
-          </div>
+          </div> -->
           <div class="carousel-item">
             <img class="d-block w-100" src="images/mall/3.jpg" alt="Third slide" />
           </div>
@@ -1415,51 +1415,80 @@
   <!-- Reviews -->
  
   <!--/.Carousel Wrapper-->
- <section class="container">
-    <div class="owl-carousel owl-theme ">
-    <div class="item"> <img class="reviews-img rounded-circle img-responsive" src="images/p5.jpg" alt=""></div>
-    <div class="item"> <img class="reviews-img rounded-circle img-responsive" src="images/p5.jpg" alt=""></div>
-    <div class="item"> <img class="reviews-img rounded-circle img-responsive" src="images/p5.jpg" alt=""></div>
-    <div class="item"> <img class="reviews-img rounded-circle img-responsive" src="images/p5.jpg" alt=""></div>
-    <div class="item"> <img class="reviews-img rounded-circle img-responsive" src="images/p5.jpg" alt=""></div>
-    <div class="item"> <img class="reviews-img rounded-circle img-responsive" src="images/p5.jpg" alt=""></div>
-    </div>
-
-     <!-- <div class="text-center">
-    <p  class="text-capitalize" style="color: #93B673; font-size: 17px; font-weight: 700;">Reviews</p>
-    <h2 style="font-weight: 600;">Our satified customer</h2>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae!</p>
+ <section class="container pt-5">
+   <div class="text-center">
+     <p style="color: #93B673;">Reviews</p>
+   <h2>Our satisfied customer says</h2>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
   </div>
-    <div class="row">
-      <div class="col-md-4 review">
-        <img class="reviews-img rounded-circle img-responsive" src="images/p5.jpg" alt="">
-        <div class="quotation-mark"><p >،،</p>
+    <div class="owl-carousel owl-theme ">
+    <div class="item"> 
+      <img class="reviews-img rounded-circle " src="images/p5.jpg" alt="">
+      <div class="quotation-mark">
+        <p>“</p>
+      </div>
+      <div id="scrollbar-div">
+        <p class="reviews-text pt-3">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, natus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum esse, at consectetur quis omnis quae rerum officia temporibus soluta nulla odit vero quidem beatae nam rem quasi? Alias, accusamus! Unde!
+      </p>
         </div>
-        <div class="text-center pt-4">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minima quod excepturi reprehenderit!</p>
-        <p>Rania Ramy</p>
-      </div>
-      </div>
-      <div class="col-md-4 review">
-        <img class="reviews-img rounded-circle img-responsive" src="images/p5.jpg" alt="">
-        <div class="quotation-mark"><p >،،</p>
-        </div>
-        <div class="text-center pt-4">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minima quod excepturi reprehenderit!</p>
-        <p>Rania Ramy</p>
-      </div>
-      </div>
-      <div class="col-md-4 review">
-        <img class="reviews-img rounded-circle img-responsive" src="images/p5.jpg" alt="">
-        <div class="quotation-mark"><p >،،</p>
-        </div>
-        <div class="text-center pt-4">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minima quod excepturi reprehenderit! lore</p>
-        <p>Rania Ramy</p>
-      </div>
-      </div>
+        <p class="text-center" style="font-weight: bold;">Nada Ahmed</p>
     </div>
-  </section> -->
+    
+    <div class="item">
+       <img class="reviews-img rounded-circle img-responsive" src="images/p5.jpg" alt="">
+    <div class="quotation-mark"><p>“</p>
+    </div>
+    <p class="reviews-text pt-3">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, natus!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed suscipit quod, impedit nulla vero, iste praesentium nihil nesciunt excepturi velit nemo quidem dolores facere unde odio, molestiae distinctio deserunt!
+  </p>
+  <p class="text-center" style="font-weight: bold;">Nada Ahmed</p>
+    </div>
+    <div class="item"> 
+      <img class="reviews-img rounded-circle img-responsive" src="images/p5.jpg" alt="">
+      <div class="quotation-mark"><p>“</p></div>
+      <p class="reviews-text pt-3">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, natus!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus repellendus nulla, earum a deserunt ratione laborum molestiae dolor porro illum, dignissimos culpa officiis! Ipsum ut nam consectetur odio aspernatur.
+    </p>
+    <p class="text-center" style="font-weight: bold;">Nada Ahmed</p>
+    </div>
+    <div class="item"> 
+      <img class="reviews-img rounded-circle img-responsive" src="images/p5.jpg" alt="">
+      <div class="quotation-mark"><p>“</p></div>
+      <p class="reviews-text pt-3">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, natus!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quam voluptatem laborum labore perspiciatis nobis animi odit, accusamus repudiandae quaerat impedit ab modi assumenda perferendis, dignissimos quo soluta natus inventore!
+    </p>
+    <p class="text-center" style="font-weight: bold;">Nada Ahmed</p>
+    </div>
+    <div class="item"> 
+      <img class="reviews-img rounded-circle img-responsive" src="images/p5.jpg" alt="">
+      <div class="quotation-mark"><p>“</p></div>
+      <p class="reviews-text pt-3">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, natus!
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, ipsum nesciunt maiores beatae maxime vitae amet, iusto quasi possimus tempore odio aspernatur labore reprehenderit voluptas explicabo corporis eligendi quod. Sequi?
+    </p>
+    <p class="text-center" style="font-weight: bold;">Nada Ahmed</p>
+    </div>
+    <div class="item"> 
+      <img class="reviews-img rounded-circle img-responsive" src="images/p5.jpg" alt="">
+      <div class="quotation-mark"><p>“</p></div>
+      <p class="reviews-text pt-3">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, natus!
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa sint nostrum velit enim officiis, corrupti sed nobis veniam voluptate voluptates quae dolores in? Est fugit veritatis minus laudantium sunt? Modi.
+    </p>
+    <p class="text-center" style="font-weight: bold;">Nada Ahmed</p>
+    </div>
+    </div>
   <!-- contact us -->
   <section class="container-fluid pt-5 contact-us">
     <div class="container">
