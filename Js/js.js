@@ -14,14 +14,19 @@ $(document).ready(function() {
     });
    
   
-    
+    $(function() {
+  $( ".zoom-in" ).effect( "slide",3000);
+});
 
 
 	
 }); 
-$( ".carousel-control-next").click(function() {
-  $( ".zoom-in" ).effect( "slide",3000);
-});
+
+$("#carouselExampleIndicators").bind('slid.bs.carousel',function(e){
+         $( ".zoom-in" ).effect( "slide",3000);
+        //  alert('2323');
+    
+     });
 // Brand Slider
 $('.brand-slider').slick({
   speed: 5000,
