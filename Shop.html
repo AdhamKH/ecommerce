@@ -107,7 +107,7 @@
                 <div class="wishlist d-flex flex-row align-items-center justify-content-end">
                     <div class="wishlist_icon"><i class="fas fa-shopping-cart icon-color fa-border p-3 "></i></div>
                     <div class="wishlist_content">
-                        <div class="wishlist_text"><a href="#">My Account</a></div>
+                        <div class="wishlist_text"><a href="profile.html">My Account</a></div>
                         <div class="wishlist_count">     
                             <a  style="color: #000000a6; font-size: 12px" href="login.html">Login /</a>
                             <a style="color: #000000a6; font-size: 12px" href="join.html">Join</a>
@@ -426,12 +426,12 @@
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-                    pages
+                    categories
                   </a>
                   <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                    <li><a class="dropdown-item" href="#"> category 1</a></li>
                     <li>
-                      <a class="dropdown-item" href="#"> Submenu item 2 </a>
+                      <a class="dropdown-item" href="#"> category 2 </a>
                     </li>
                   </ul>
                 </li>
@@ -543,8 +543,8 @@
     </section>
     <!-- customize shop -->
     <section class="container">
-        <div class="row">
-            <div class="col-md-3">
+        <div class="row pt-2">
+            <div class="col-lg-3">
                 <div class="m-0 p-0">
                     <div class="shop-green-line pt-3">
                         <h3 class="font-weight-bold text-uppercase">all products</h3>
@@ -709,11 +709,16 @@
 
                 </div>
             </div>
-            <div class="col-md-9 pt-3">
-                <div class="row">
-                        <div class="right-side-shop">
-                    <input  type="text" placeholder="Enter your key word">
-          
+            <div class="col-lg-9 pt-3">
+                <div class="row ">
+                  <div class="col-lg-6 "> 
+                    <form action="">
+                     <input  type="search" style="padding: 5px 20px;" placeholder="Enter your key word">
+                    </form>
+                    </div>
+                        <!-- <div class="right-side-shop"> -->
+                          <div class="col-lg-1"></div>
+                  <div class="col-lg-5 justify-content-end  ">
                     <label class="">Sort by :</label>
                     <select class="custom-select">
                         <option selected>newest</option>
@@ -722,7 +727,7 @@
                         <option value="3">Three</option>
                       </select>
                    
-                      <div style="display: inline-block; ">
+                      <!-- <div> -->
                       <label>Pages: </label>
                       <nav class="d-inline-block" aria-label="...">
                         <ul class="pagination pagination-sm">
@@ -733,7 +738,10 @@
                           <li class="page-item"><a class="page-link" href="#">3</a></li>
                         </ul>
                       </nav>
-                    </div>
+                  <!-- </div> -->
+          
+                
+                    <!-- </div> -->
         
                 </div>
                 
